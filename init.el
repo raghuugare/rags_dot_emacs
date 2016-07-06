@@ -46,3 +46,12 @@
   :pin melpa-stable
   :bind ("C-x g" . magit-status))
 
+;; get markdown-mode for working with .md files.
+(use-package markdown-mode
+  :ensure t
+  :pin melpa-stable
+  :commands (markdown-mode gfm-mode)
+  :mode (("README\\.md\\'" . gfm-mode)
+         ("\\.md\\'" . markdown-mode)
+         ("\\.markdown\\'" . markdown-mode))
+  :init (setq markdown-command "pandoc -c github-pandoc.css --from markdown -t html5 --mathjax --highlight-style pygments --standalone"))
