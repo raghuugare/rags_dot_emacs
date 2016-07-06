@@ -27,7 +27,7 @@
 
 
 ;; First, ensure that we have the awesome use-package installed!
-;; Hat-tip to John Wiegley ! <3 :)
+;; Hat-tip to John Wiegley (@jwiegley) ! <3 :)
 ;; Source: https://github.com/jwiegley/use-package
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
@@ -45,6 +45,15 @@
   :ensure t
   :pin melpa-stable
   :bind ("C-x g" . magit-status))
+
+;; Properly set exec-path from the shell
+;; package courtesy Steve Purcell (@purcell)
+;; Source: https://github.com/purcell/exec-path-from-shell
+(use-package exec-path-from-shell
+  :ensure t)
+;; init the package...
+(exec-path-from-shell-initialize)
+
 
 ;; get markdown-mode for working with .md files.
 (use-package markdown-mode
