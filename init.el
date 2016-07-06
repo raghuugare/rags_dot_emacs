@@ -53,7 +53,7 @@
   :ensure t
   :pin melpa-stable)
 ;; init the package...
-(exec-path-from-shell-initialize)g
+(exec-path-from-shell-initialize)
 
 ;; get markdown-mode for working with .md files.
 (use-package markdown-mode
@@ -66,6 +66,3 @@
   :init (setq markdown-command "pandoc -c github-pandoc.css --from=markdown --to=html5 --mathjax --highlight-style=pygments --standalone"))
 ;; A sample command to generate HTML from a README.md file using pandoc is as follows:
 ;; pandoc -c <path>/github-pandoc.css --from=markdown --to=html5 --mathjax --highlight-style=pygments --standalone README.md --output=README.html
-
-
-
