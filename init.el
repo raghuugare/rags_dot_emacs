@@ -66,3 +66,7 @@
   :init (setq markdown-command "pandoc -c github-pandoc.css --from=markdown --to=html5 --mathjax --highlight-style=pygments --standalone"))
 ;; A sample command to generate HTML from a README.md file using pandoc is as follows:
 ;; pandoc -c <path>/github-pandoc.css --from=markdown --to=html5 --mathjax --highlight-style=pygments --standalone README.md --output=README.html
+
+;; Get the AucTeX package for TeX-nical (& LaTeX) support.
+(use-package tex-site
+  :ensure auctex)
