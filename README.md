@@ -10,13 +10,17 @@ If you are a complete beginner to Emacs, I would suggest you go through some of 
 + Mickey Petersen's "[Mastering Emacs](https://www.masteringemacs.org)" book & site which has [a section for Emacs beginners](https://www.masteringemacs.org/article/beginners-guide-to-emacs)
 + [Sacha Chua's Emacs Beginner Resources](http://sachachua.com/blog/2014/04/emacs-beginner-resources/) which records many other interesting links 
 
-+ Also, some of the Emacs Starter Kits that you can take a look at for information and inspiration are as below:
+---
 
-+ [**Prelude**](http://batsov.com/prelude/)
+Also, some of the Emacs Starter Kits that you can take a look at for information and inspiration are as below:
 
-+ [**Steve Purcell's Emacs config**](http://github.com/purcell/emacs.d)
+Emacs Starter Kit |  Author
+:-----------------|:--------:
+[**Prelude**](http://batsov.com/prelude/) | Bozhidor Batsov
 
-+ [**John Wiegley's Emacs config**](https://github.com/jwiegley/dot-emacs)
++ [**Steve Purcell's Emacs config**](http://github.com/purcell/emacs.d) | Steve Purcell
+
++ [**John Wiegley's Emacs config**](https://github.com/jwiegley/dot-emacs) | John Wiegley
 
 ## Installation
 
@@ -30,7 +34,7 @@ That is, simply run the following and fire up Emacs(version 24.5.1 as tested):
 git clone git@gitbucket.com:raghuugare/rags_dot_emacs.git ~/.emacs.d
 ```
 
-** Caveats & Warnings **
+**Caveats & Warnings**
 
 + Make sure you have backed up your existing `.emacs.d` foder first!
 
