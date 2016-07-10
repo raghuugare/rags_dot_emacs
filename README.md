@@ -15,7 +15,7 @@ If you are a complete beginner to Emacs, I would suggest you go through some of 
 Also, some of the Emacs Starter Kits that you can take a look at for information and inspiration are as below:
 
 Emacs Starter Kit |  Author
-:-----------------|:--------:
+:-----------------|:--------
 [**Prelude**](http://batsov.com/prelude/) | Bozhidor Batsov, known for CIDER (Clojure IDE in Emacs)
 [**Steve Purcell's Emacs config**](http://github.com/purcell/emacs.d) | Steve Purcell (an avid open-source maintainer, including for MELPA)
 [**John Wiegley's Emacs config**](https://github.com/jwiegley/dot-emacs) | John Wiegley (known for use-package, ledger, & lots more)
