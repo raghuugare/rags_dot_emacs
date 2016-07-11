@@ -69,7 +69,12 @@
 ;; NOTE: If we install the 'markdown' parser first (brew install markdown), then, we have extra input formats supported in pandoc itself
 ;; E.g., pandoc --from can then have options like markdown_github which prevents the need for all the CSS hackery!
 
-
 ;; Get the AucTeX package for TeX-nical (& LaTeX) support.
 (use-package tex-site
   :ensure auctex)
+
+;; get the awesome string manipulation library by Magnar Sveen
+;; Source: https://github.com/magnars/s.el
+(use-package s
+  :ensure t
+  :pin melpa-stable)
