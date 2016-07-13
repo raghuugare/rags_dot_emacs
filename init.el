@@ -10,12 +10,20 @@
 
 (package-initialize)
 
+;; Now & then, I like to tweak the Font Family of the group 'basic-faces'(M-x customize RET basic-faces RET).
+;; Some of my favourite fonts are:
+;; Ubuntu Mono, Inconsolata, Monaco, Consolas, & Menlo.
+;; A new font I'm loving is the 'Input' mono-spaced font.
+;; The following setting assumes you have the Input Mono Font installed.
+;; Source: http://input.fontbureau.com/download/
+;; Thanks to David Jonathan Ross for making this font freely available.
+;; NOTE: This font is free for Personal use only.
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:inherit nil :stipple nil :background "White" :foreground "Black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "nil" :family "Input Mono")))))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -24,7 +32,6 @@
  ;; If there is more than one, they won't work right.
  '(menu-bar-mode nil)
  '(tool-bar-mode nil))
-
 
 ;; First, ensure that we have the awesome use-package installed!
 ;; Hat-tip to John Wiegley (@jwiegley) ! <3 :)
