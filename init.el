@@ -85,3 +85,18 @@
 (use-package s
   :ensure t
   :pin melpa-stable)
+
+;; get the excellent 'smex' library built on top of IDO mode.
+;; Source: https://github.com/nonsequitur/smex
+(use-package smex
+  :ensure t
+  :pin melpa-stable
+  ;; Bind "M-x" to smex! :)
+  ;; We can even set a different prompt by setting 'smex-prompt-string
+  ;; The default prompt string is, of-course "M-x "
+  :bind (("M-x" . smex)
+	 ;; Bind the old "M-x" command to the chord "C-c C-c M-x"
+	 ("C-c C-c M-x" . execute-extended-command))
+  :config (smex-initialize))
+
+
