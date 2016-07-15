@@ -30,8 +30,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(menu-bar-mode nil)
- '(tool-bar-mode nil))
+ '(menu-bar-mode nil "Control visibility of Graphical Menu-bar")
+ '(show-paren-mode t "Set/unset Show matching parentheses")
+ '(tool-bar-mode nil "Control visibility of Graphical Tool bar"))
 
 ;; First, ensure that we have the awesome use-package installed!
 ;; Hat-tip to John Wiegley (@jwiegley) ! <3 :)
