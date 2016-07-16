@@ -100,4 +100,17 @@
 	 ("C-c C-c M-x" . execute-extended-command))
   :config (smex-initialize))
 
+;; get web-mode for editing html & other(to be added later) web-templates in a powerful way.
+;; Source: 
+(use-package web-mode
+  :ensure t
+  :pin melpa-stable
+  :mode (("\\.html\\'" . web-mode)))
+
+;; get the lorem-ipsum package to insert standard Latin text 
+(use-package lorem-ipsum
+  :ensure t)
+
+
+
 
