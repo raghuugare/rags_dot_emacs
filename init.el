@@ -111,6 +111,12 @@
 (use-package lorem-ipsum
   :ensure t)
 
-
-
+;; get the awesome smartparens package to manage pair-able stuff like (), [], HTML tags, etc.
+;; Source: https://github.com/Fuco1/smartparens
+;; Also see: https://ebzzry.github.io/emacs-pairs.html
+(use-package smartparens
+  :ensure t
+  :pin melpa-stable
+  :config
+  (setq smartparens-global-mode t))
 
