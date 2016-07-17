@@ -105,7 +105,9 @@
 (use-package web-mode
   :ensure t
   :pin melpa-stable
-  :mode (("\\.html\\'" . web-mode)))
+  :mode (("\\.html\\'" . web-mode))
+  :config
+  (setq web-mode-markup-indent-offset 2))
 
 ;; get the lorem-ipsum package to insert standard Latin text 
 (use-package lorem-ipsum
