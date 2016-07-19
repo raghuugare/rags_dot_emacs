@@ -32,7 +32,9 @@
  ;; If there is more than one, they won't work right.
  '(menu-bar-mode nil "Control visibility of Graphical Menu-bar")
  '(show-paren-mode t "Set/unset Show matching parentheses")
- '(tool-bar-mode nil "Control visibility of Graphical Tool bar"))
+ '(tool-bar-mode nil "Control visibility of Graphical Tool bar")
+ '(indent-tab-mode nil "Use space for TAB key by default")
+ '(tab-width 2))
 
 ;; First, ensure that we have the awesome use-package installed!
 ;; Hat-tip to John Wiegley (@jwiegley) ! <3 :)
