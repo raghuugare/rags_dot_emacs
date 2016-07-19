@@ -33,6 +33,16 @@
  '(menu-bar-mode nil "Control visibility of Graphical Menu-bar")
  '(show-paren-mode t "Set/unset Show matching parentheses")
  '(tool-bar-mode nil "Control visibility of Graphical Tool bar")
+ ;; Do NOT use TABS for indentation by default!
+ ;; See the following art-icles!
+ ;; https://www.emacswiki.org/emacs/TabsAreEvil
+ ;; https://www.masteringemacs.org/article/converting-tabs-whitespace
+ ;; https://www.emacswiki.org/emacs/IndentationBasics
+ ;; https://www.emacswiki.org/emacs/SmartTabs
+ ;; https://www.emacswiki.org/emacs/EightyColumnRule
+ ;; https://www.jwz.org/doc/tabs-vs-spaces.html
+ ;; http://xahlee.info/UnixResource_dir/writ/tabs_vs_spaces.html
+ ;; https://github.com/jcsalomon/smarttabs
  '(indent-tab-mode nil "Use space for TAB key by default")
  '(tab-width 2))
 
