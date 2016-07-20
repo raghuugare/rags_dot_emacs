@@ -34,6 +34,10 @@
  '(show-paren-mode t "Set/unset Show matching parentheses")
  '(tool-bar-mode nil "Control visibility of Graphical Tool bar")
  ;; Do NOT use TABS for indentation by default!
+ '(indent-tab-mode nil "Use space for TAB key by default")
+ '(tab-width 2))
+
+ ;; NOTE: Regarding Tabs vs Space issue
  ;; See the following art-icles!
  ;; https://www.emacswiki.org/emacs/TabsAreEvil
  ;; https://www.masteringemacs.org/article/converting-tabs-whitespace
@@ -43,8 +47,7 @@
  ;; https://www.jwz.org/doc/tabs-vs-spaces.html
  ;; http://xahlee.info/UnixResource_dir/writ/tabs_vs_spaces.html
  ;; https://github.com/jcsalomon/smarttabs
- '(indent-tab-mode nil "Use space for TAB key by default")
- '(tab-width 2))
+
 
 ;; First, ensure that we have the awesome use-package installed!
 ;; Hat-tip to John Wiegley (@jwiegley) ! <3 :)
@@ -134,3 +137,13 @@
   :config
   (setq smartparens-global-mode t))
 
+;; get some awesome chess from the awesome Mr.John Wiegley! :-)
+(use-package chess
+	:ensure t)
+
+;; get me my favourite SICP book as an 'Info' manual.
+;; Source   : https://mitpress.mit.edu/sicp/
+;; Also see : http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/
+(use-package sicp
+	:ensure t)
+	
