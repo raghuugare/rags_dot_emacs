@@ -137,10 +137,21 @@
   :config
   (setq smartparens-global-mode t))
 
+;; ===========================================================
+;; -----------------------GAMES-------------------------------
+;; ===========================================================
+
 ;; get some awesome chess from the awesome Mr.John Wiegley! :-)
 (use-package chess
 	:ensure t)
 
+;; get slime-volleyball
+(use-package slime-volleyball
+	:ensure t)
+
+;; ===========================================================
+;; -----------------------BOOKS-------------------------------
+;; ===========================================================
 ;; get me my favourite SICP book as an 'Info' manual.
 ;; Source   : https://mitpress.mit.edu/sicp/
 ;; Also see : http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/
