@@ -137,6 +137,17 @@
   :config
   (setq smartparens-global-mode t))
 
+(use-package slime
+	:ensure t
+	:pin melpa-stable
+	:config
+	(setq inferior-lisp-program "/usr/local/bin/sbcl")
+	(setq slime-contribs '(slime-fancy)))
+
+
+
+
+
 ;; ===========================================================
 ;; -----------------------GAMES-------------------------------
 ;; ===========================================================
@@ -149,9 +160,15 @@
 (use-package slime-volleyball
 	:ensure t)
 
+
+
+
+
+
 ;; ===========================================================
 ;; -----------------------BOOKS-------------------------------
 ;; ===========================================================
+
 ;; get me my favourite SICP book as an 'Info' manual.
 ;; Source   : https://mitpress.mit.edu/sicp/
 ;; Also see : http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/
