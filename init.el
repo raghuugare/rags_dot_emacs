@@ -145,6 +145,35 @@
 	(setq slime-contribs '(slime-fancy)))
 
 
+;; ========== PDF Viewing on my Emacs ================================
+;; For the default experience, go with DocView (built-in)
+;; For Mac, all that is needed is to install ghostscript
+;; brew install ghostscript
+;; And you're good to go!
+
+;; For more options than the builtin DocView, we use "pdf-tools"
+;; Source: https://github.com/politza/pdf-tools
+
+;; PREREQUISITES (done!) :
+;; brew install poppler 
+;; brew install homebrew/emacs/pdf-tools
+;; Now, we can install pdf-tools package from MELPA...
+
+;;; Install epdfinfo via 'brew install pdf-tools' and then install the
+;;; pdf-tools elisp via the use-package below.
+;;; To upgrade the epdfinfo server, just do 'brew upgrade pdf-tools' prior to
+;;; upgrading to newest pdf-tools package using Emacs package system.
+(use-package pdf-tools
+  :ensure t
+  :config
+  (custom-set-variables
+    '(pdf-tools-handle-upgrades nil)) ; Use brew upgrade pdf-tools instead.
+  (setq pdf-info-epdfinfo-program "/usr/local/bin/epdfinfo"))
+(pdf-tools-install)
+
+
+
+
 
 
 
@@ -159,10 +188,6 @@
 ;; get slime-volleyball
 (use-package slime-volleyball
 	:ensure t)
-
-
-
-
 
 
 ;; ===========================================================
