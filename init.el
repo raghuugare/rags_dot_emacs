@@ -141,7 +141,11 @@
 	:ensure t
 	:pin melpa-stable
 	:config
-	(setq inferior-lisp-program "/usr/local/bin/sbcl")
+	;; Use either sbcl or clisp as the LISP program...
+	;; brew install sbcl
+	;; brew install clisp
+	;; (setq inferior-lisp-program "/usr/local/bin/slime")
+	(setq inferior-lisp-program "/usr/local/bin/clisp")
 	(setq slime-contribs '(slime-fancy)))
 
 
