@@ -183,7 +183,17 @@
 	:ensure t
 	:pin melpa-stable)
 
+;; get some color-themes!!
+;; source: https://github.com/emacs-jp/replace-colorthemes/
+(use-package color-theme-modern
+	:ensure t)
 
+;; get Solarized themes!
+(use-package color-theme-sanityinc-solarized
+	:ensure t)
+;; get Tomorrow themese!
+(use-package color-theme-sanityinc-tomorrow
+	:ensure t)
 
 
 
