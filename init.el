@@ -148,8 +148,9 @@
 	(setq inferior-lisp-program "/usr/local/bin/clisp")
 	(setq slime-contribs '(slime-fancy)))
 
-
-;; ========== PDF Viewing on my Emacs ================================
+;; =========================================================
+;; ----------------- PDF Viewing on my Emacs ---------------
+;; =========================================================
 ;; For the default experience, go with DocView (built-in)
 ;; For Mac, all that is needed is to install ghostscript
 ;; brew install ghostscript
@@ -173,7 +174,10 @@
   (custom-set-variables
     '(pdf-tools-handle-upgrades nil)) ; Use brew upgrade pdf-tools instead.
   (setq pdf-info-epdfinfo-program "/usr/local/bin/epdfinfo"))
+;; init pdf-tools
 (pdf-tools-install)
+
+
 
 
 
