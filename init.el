@@ -177,6 +177,13 @@
 ;; init pdf-tools
 (pdf-tools-install)
 
+;; get haskell-mode for working with Haskell! :)
+;; source: http://haskell.github.io/haskell-mode/
+(use-package haskell-mode
+	:ensure t
+	:pin melpa-stable)
+
+
 
 
 
