@@ -195,12 +195,11 @@
 (use-package color-theme-sanityinc-tomorrow
 	:ensure t)
 
-
-
-
-
-
-
+;; get gutter markers to see when Git-manages stuff changes!
+;; source: https://github.com/syohex/emacs-git-gutter
+(use-package git-gutter
+	:ensure t
+	:pin melpa-stable)
 
 ;; ===========================================================
 ;; -----------------------GAMES-------------------------------
