@@ -30,12 +30,15 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(menu-bar-mode nil "Control visibility of Graphical Menu-bar")
- '(show-paren-mode t "Set/unset Show matching parentheses")
- '(tool-bar-mode nil "Control visibility of Graphical Tool bar")
- ;; Do NOT use TABS for indentation by default!
- '(indent-tab-mode nil "Use space for TAB key by default")
- '(tab-width 2))
+ '(indent-tab-mode nil t)
+ '(menu-bar-mode nil)
+ '(package-selected-packages
+	 (quote
+		(wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
+ '(pdf-tools-handle-upgrades nil)
+ '(show-paren-mode t)
+ '(tab-width 2)
+ '(tool-bar-mode nil))
 
  ;; NOTE: Regarding Tabs vs Space issue
  ;; See the following art-icles!
@@ -230,6 +233,14 @@
 ;; get slime-volleyball
 (use-package slime-volleyball
 	:ensure t)
+
+;; weather from wttr.in
+(use-package wttrin
+  :ensure t
+  :commands (wttrin)
+  :init
+  (setq wttrin-default-cities '("Bengaluru"
+                                "London")))
 
 ;; ===========================================================
 ;; -----------------------BOOKS-------------------------------
