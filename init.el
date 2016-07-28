@@ -142,8 +142,8 @@
 	:pin melpa-stable
 	:config
 	;; Use either sbcl or clisp as the LISP program...
-	;; brew install sbcl
-	;; brew install clisp
+	;; brew install sbcl RET
+	;; brew install clisp RET
 	;; (setq inferior-lisp-program "/usr/local/bin/slime")
 	(setq inferior-lisp-program "/usr/local/bin/clisp")
 	(setq slime-contribs '(slime-fancy)))
@@ -160,8 +160,8 @@
 ;; Source: https://github.com/politza/pdf-tools
 
 ;; PREREQUISITES (done!) :
-;; brew install poppler 
-;; brew install homebrew/emacs/pdf-tools
+;; brew install poppler RET 
+;; brew install homebrew/emacs/pdf-tools RET
 ;; Now, we can install pdf-tools package from MELPA...
 
 ;;; Install epdfinfo via 'brew install pdf-tools' and then install the
@@ -182,6 +182,13 @@
 (use-package haskell-mode
 	:ensure t
 	:pin melpa-stable)
+
+;; get a mode to help out with the Shakespearean templates(Hamlet, Lucius, Cassius, Julius)
+;; source: http://github.com/CodyReichert/shakespeare-mode
+(use-package shakespeare-mode
+	:ensure t
+	:pin melpa-stable)
+
 
 ;; get some color-themes!!
 ;; source: https://github.com/emacs-jp/replace-colorthemes/
