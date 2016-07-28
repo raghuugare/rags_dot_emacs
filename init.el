@@ -193,6 +193,9 @@
 (use-package json-mode
 	:ensure t)
 
+;; get a mode for handling YAML files
+(use-package yaml-mode
+	:ensure t)
 
 ;; get some color-themes!!
 ;; source: https://github.com/emacs-jp/replace-colorthemes/
