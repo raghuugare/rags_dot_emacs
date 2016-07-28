@@ -189,6 +189,10 @@
 	:ensure t
 	:pin melpa-stable)
 
+;; get a mode for handling JSON files
+(use-package json-mode
+	:ensure t)
+
 
 ;; get some color-themes!!
 ;; source: https://github.com/emacs-jp/replace-colorthemes/
