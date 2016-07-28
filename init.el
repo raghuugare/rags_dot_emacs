@@ -223,10 +223,13 @@
 (use-package chess
 	:ensure t)
 
+;; for some word-play! :-)
+(use-package jumblr
+	:ensure t)
+
 ;; get slime-volleyball
 (use-package slime-volleyball
 	:ensure t)
-
 
 ;; ===========================================================
 ;; -----------------------BOOKS-------------------------------
