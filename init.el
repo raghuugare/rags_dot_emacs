@@ -34,7 +34,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
 	 (quote
-		(wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
+		(sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
  '(pdf-tools-handle-upgrades nil)
  '(show-paren-mode t)
  '(tab-width 2)
@@ -203,6 +203,11 @@
 ;; get a mode for handling YAML files
 (use-package yaml-mode
 	:ensure t)
+
+;; get a mode for handling SASS files
+(use-package sass-mode
+	:ensure t
+	:pin melpa-stable)
 
 ;; get some color-themes!!
 ;; source: https://github.com/emacs-jp/replace-colorthemes/
