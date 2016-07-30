@@ -151,6 +151,10 @@
 	(setq inferior-lisp-program "/usr/local/bin/clisp")
 	(setq slime-contribs '(slime-fancy)))
 
+(use-package geiser
+	:ensure t
+	:pin melpa-stable)
+
 ;; =========================================================
 ;; ----------------- PDF Viewing on my Emacs ---------------
 ;; =========================================================
