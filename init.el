@@ -35,7 +35,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
 	 (quote
-		(sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
+		(paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
  '(pdf-tools-handle-upgrades nil)
  '(show-paren-mode t)
  '(tab-width 2)
@@ -141,6 +141,8 @@
   :config
   (setq smartparens-global-mode t))
 
+;; Package to support working with LISP.
+;; Note: Also try 'Sly' which is a fork of this.
 (use-package slime
 	:ensure t
 	:pin melpa-stable
@@ -152,7 +154,13 @@
 	(setq inferior-lisp-program "/usr/local/bin/clisp")
 	(setq slime-contribs '(slime-fancy)))
 
+;; Package to support working with Scheme files.
 (use-package geiser
+	:ensure t
+	:pin melpa-stable)
+
+;; A Must-have mode for any serious LISP-y work!!
+(use-package paredit
 	:ensure t
 	:pin melpa-stable)
 
