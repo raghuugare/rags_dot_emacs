@@ -251,11 +251,8 @@
 (use-package abyss-theme
 	:ensure t)
 
-;; get gutter markers to see when Git-manages stuff changes!
-;; source: https://github.com/syohex/emacs-git-gutter
-(use-package git-gutter
-	:ensure t
-	:pin melpa-stable)
+;; Load abyss as the default theme at start-up! :)
+(load-theme #'abyss t)
 
 ;; ===========================================================
 ;; -----------------------GAMES-------------------------------
