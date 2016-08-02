@@ -35,7 +35,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
 	 (quote
-		(paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
+		(restclient paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized chess)))
  '(pdf-tools-handle-upgrades nil)
  '(show-paren-mode t)
  '(tab-width 2)
@@ -163,6 +163,12 @@
 (use-package paredit
 	:ensure t
 	:pin melpa-stable)
+
+;; Install a superb li'l REST-client from @pashky
+;; Featured in EmacsRocks#15 (https://www.youtube.com/watch?v=fTvQTMOGJaw)
+;; Source: https://github.com/pashky/restclient.el
+(use-package restclient
+	:ensure t)
 
 ;; =========================================================
 ;; ----------------- PDF Viewing on my Emacs ---------------
