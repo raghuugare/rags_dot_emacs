@@ -325,8 +325,9 @@ static char *gnus-pointer[] = {
 (use-package abyss-theme
 	:ensure t)
 
-;; Load abyss as the default theme at start-up! :)
-(load-theme #'abyss t)
+;; Load the current-favourite default theme at start-up! :)
+;; (load-theme #'abyss t)
+(load-theme #'sanityinc-solarized-light t)
 
 ;; ===========================================================
 ;; -----------------------GAMES-------------------------------
