@@ -35,7 +35,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
 	 (quote
-		(alect-themes restclient paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
+		(abyss-theme alect-themes restclient paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
  '(pdf-tools-handle-upgrades nil)
  '(show-paren-mode t)
  '(tab-width 2)
@@ -236,6 +236,10 @@
 (use-package alect-themes
 	:ensure t)
 
+;; get the abyss theme! :)
+;; source: https://github.com/mgrbyte/emacs-abyss-theme
+(use-package abyss-theme
+	:ensure t)
 
 ;; get gutter markers to see when Git-manages stuff changes!
 ;; source: https://github.com/syohex/emacs-git-gutter
