@@ -230,6 +230,10 @@
 	:ensure t
 	:pin melpa-stable)
 
+;; =========================================================
+;; ------------------------THEMES---------------------------
+;; =========================================================
+
 ;; get Solarized themes!
 (use-package color-theme-sanityinc-solarized
 	:ensure t)
