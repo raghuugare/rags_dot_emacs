@@ -199,6 +199,12 @@
 ;; init pdf-tools
 (pdf-tools-install)
 
+;; get gutter markers to see when Git-manages stuff changes!
+;; source: https://github.com/syohex/emacs-git-gutter
+(use-package git-gutter
+	:ensure t
+	:pin melpa-stable)
+
 ;; get haskell-mode for working with Haskell! :)
 ;; source: http://haskell.github.io/haskell-mode/
 (use-package haskell-mode
