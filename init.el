@@ -147,6 +147,11 @@ static char *gnus-pointer[] = {
   :pin melpa-stable
   :bind ("C-x g" . magit-status))
 
+;; get git-timemachine & see git-revisions of a file back in time! :)
+;; source: https://github.com/pidu/git-timemachine
+(use-package git-timemachine
+	:ensure t)
+
 ;; Properly set exec-path from the shell
 ;; package courtesy Steve Purcell (@purcell)
 ;; Source: https://github.com/purcell/exec-path-from-shell
