@@ -148,6 +148,7 @@ static char *gnus-pointer[] = {
   :bind ("C-x g" . magit-status))
 
 ;; get git-timemachine & see git-revisions of a file back in time! :)
+;; Use 'M-x git-timemachine' to see!
 ;; source: https://github.com/pidu/git-timemachine
 (use-package git-timemachine
 	:ensure t)
