@@ -334,6 +334,7 @@ static char *gnus-pointer[] = {
 ;; Load the current-favourite default theme at start-up! :)
 ;; (load-theme #'abyss t)
 (load-theme #'sanityinc-solarized-light t)
+;; (load-theme #'sanityinc-solarized-dark t)
 
 ;; ===========================================================
 ;; -----------------------GAMES-------------------------------
