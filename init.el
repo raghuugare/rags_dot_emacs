@@ -87,7 +87,7 @@ static char *gnus-pointer[] = {
  '(menu-bar-mode nil)
  '(package-selected-packages
 	 (quote
-		(abyss-theme alect-themes restclient paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
+		(rainbow-mode abyss-theme alect-themes restclient paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
  '(pdf-tools-handle-upgrades nil)
  '(show-paren-mode t)
  '(tab-width 2)
@@ -207,6 +207,10 @@ static char *gnus-pointer[] = {
   :mode (("\\.html\\'" . web-mode))
   :config
   (setq web-mode-markup-indent-offset 2))
+
+;; show colors for color-codes
+(use-package rainbow-mode
+	:ensure t)
 
 ;; get the lorem-ipsum package to insert standard Latin text 
 (use-package lorem-ipsum
