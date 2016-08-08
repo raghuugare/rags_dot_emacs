@@ -147,6 +147,18 @@ static char *gnus-pointer[] = {
   :pin melpa-stable
   :bind ("C-x g" . magit-status))
 
+;; From the magit team! For git configs
+(use-package gitconfig-mode
+	:ensure t)
+
+;; From the magit team! For git attributes
+(use-package gitattributes-mode
+	:ensure t)
+
+;; From the magit team! For gitignore files
+(use-package gitignore-mode
+	:ensure t)
+
 ;; get git-timemachine & see git-revisions of a file back in time! :)
 ;; Use 'M-x git-timemachine' to see!
 ;; source: https://github.com/pidu/git-timemachine
