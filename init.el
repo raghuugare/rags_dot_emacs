@@ -87,7 +87,7 @@ static char *gnus-pointer[] = {
  '(menu-bar-mode nil)
  '(package-selected-packages
 	 (quote
-		(rainbow-identifiers rainbow-mode abyss-theme alect-themes restclient paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
+		(farmhouse-theme rainbow-identifiers rainbow-mode abyss-theme alect-themes restclient paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
  '(pdf-tools-handle-upgrades nil)
  '(show-paren-mode t)
  '(tab-width 2)
@@ -337,7 +337,8 @@ static char *gnus-pointer[] = {
 ;; get Solarized themes!
 (use-package color-theme-sanityinc-solarized
 	:ensure t)
-;; get Tomorrow themese!
+
+;; get Tomorrow themes!
 (use-package color-theme-sanityinc-tomorrow
 	:ensure t)
 
@@ -349,6 +350,9 @@ static char *gnus-pointer[] = {
 ;; get the abyss theme! :)
 ;; source: https://github.com/mgrbyte/emacs-abyss-theme
 (use-package abyss-theme
+	:ensure t)
+
+(use-package farmhouse-theme
 	:ensure t)
 
 ;; Load the current-favourite default theme at start-up! :)
