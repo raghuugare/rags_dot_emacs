@@ -34,7 +34,7 @@ git clone git@gitbucket.com:raghuugare/rags_dot_emacs.git ~/.emacs.d
 
 **Caveats & Warnings**
 
-+ Make sure you have backed up your existing `.emacs.d` foder first!
++ Make sure you have backed up your existing `.emacs.d` folder first!
 
 Enjoy Emacs !!! 💟😇
 
