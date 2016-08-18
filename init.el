@@ -255,6 +255,10 @@ static char *gnus-pointer[] = {
 (use-package company-math
 	:ensure t)
 
+;; ghc help via company
+(use-package company-ghc
+	:ensure t)
+
 ;; get the awesome smartparens package to manage pair-able stuff like (), [], HTML tags, etc.
 ;; Source: https://github.com/Fuco1/smartparens
 ;; Also see: https://ebzzry.github.io/emacs-pairs.html
