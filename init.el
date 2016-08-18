@@ -263,6 +263,10 @@ static char *gnus-pointer[] = {
 (use-package company-ghci
 	:ensure t)
 
+;; CABAL help via company
+(use-package company-cabal
+	:ensure t)
+
 ;; get the awesome smartparens package to manage pair-able stuff like (), [], HTML tags, etc.
 ;; Source: https://github.com/Fuco1/smartparens
 ;; Also see: https://ebzzry.github.io/emacs-pairs.html
