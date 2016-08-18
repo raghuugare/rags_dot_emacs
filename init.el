@@ -247,6 +247,10 @@ static char *gnus-pointer[] = {
 (use-package company-web
 	:ensure t)
 
+;; quick help in a nice manner!
+(use-package company-quickhelp
+	:ensure t)
+
 ;; get the awesome smartparens package to manage pair-able stuff like (), [], HTML tags, etc.
 ;; Source: https://github.com/Fuco1/smartparens
 ;; Also see: https://ebzzry.github.io/emacs-pairs.html
