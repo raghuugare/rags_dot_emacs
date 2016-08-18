@@ -91,6 +91,7 @@ static char *gnus-pointer[] = {
 \"###########.######\" };")))
  '(indent-tab-mode nil t)
  '(menu-bar-mode nil)
+ '(global-company-mode t)
  '(package-selected-packages
 	 (quote
 		(farmhouse-theme rainbow-identifiers rainbow-mode abyss-theme alect-themes restclient paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
@@ -121,16 +122,16 @@ static char *gnus-pointer[] = {
 		 (360 . "#e353b9"))))
  '(vc-annotate-very-old-color "#e353b9"))
 
- ;; NOTE: Regarding Tabs vs Space issue
- ;; See the following art-icles!
- ;; https://www.emacswiki.org/emacs/TabsAreEvil
- ;; https://www.masteringemacs.org/article/converting-tabs-whitespace
- ;; https://www.emacswiki.org/emacs/IndentationBasics
- ;; https://www.emacswiki.org/emacs/SmartTabs
- ;; https://www.emacswiki.org/emacs/EightyColumnRule
- ;; https://www.jwz.org/doc/tabs-vs-spaces.html
- ;; http://xahlee.info/UnixResource_dir/writ/tabs_vs_spaces.html
- ;; https://github.com/jcsalomon/smarttabs
+;; NOTE: Regarding Tabs vs Space issue
+;; See the following art-icles!
+;; https://www.emacswiki.org/emacs/TabsAreEvil
+;; https://www.masteringemacs.org/article/converting-tabs-whitespace
+;; https://www.emacswiki.org/emacs/IndentationBasics
+;; https://www.emacswiki.org/emacs/SmartTabs
+;; https://www.emacswiki.org/emacs/EightyColumnRule
+;; https://www.jwz.org/doc/tabs-vs-spaces.html
+;; http://xahlee.info/UnixResource_dir/writ/tabs_vs_spaces.html
+;; https://github.com/jcsalomon/smarttabs
 
 
 ;; First, ensure that we have the awesome use-package installed!
@@ -213,8 +214,8 @@ static char *gnus-pointer[] = {
   ;; We can even set a different prompt by setting 'smex-prompt-string
   ;; The default prompt string is, of-course "M-x "
   :bind (("M-x" . smex)
-	 ;; Bind the old "M-x" command to the chord "C-c C-c M-x"
-	 ("C-c C-c M-x" . execute-extended-command))
+				 ;; Bind the old "M-x" command to the chord "C-c C-c M-x"
+				 ("C-c C-c M-x" . execute-extended-command))
   :config (smex-initialize))
 
 ;; get web-mode for editing html & other(to be added later) web-templates in a powerful way.
@@ -333,7 +334,7 @@ static char *gnus-pointer[] = {
   :ensure t
   :config
   (custom-set-variables
-    '(pdf-tools-handle-upgrades nil)) ; Use brew upgrade pdf-tools instead.
+	 '(pdf-tools-handle-upgrades nil)) ; Use brew upgrade pdf-tools instead.
   (setq pdf-info-epdfinfo-program "/usr/local/bin/epdfinfo"))
 ;; init pdf-tools
 (pdf-tools-install)
@@ -433,4 +434,4 @@ static char *gnus-pointer[] = {
 ;; Also see : http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/
 (use-package sicp
 	:ensure t)
-	
+
