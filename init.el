@@ -147,6 +147,12 @@ static char *gnus-pointer[] = {
 (require 'diminish)
 (require 'bind-key)
 
+;;;; LOAD Rainbow mode also when opening files of type *.css
+;; css-mode (MAJOR) plus rainbow-mode(MINOR) 
+(defun css-mode-and-rainbow-mode() (css-mode) (rainbow-mode))
+;; Load both major and minor modes in one call based on file type of .css
+(add-to-list 'auto-mode-alist '("\\.css$" . css-mode-and-rainbow-mode))
+
 ;; get magit for working with Git
 ;; also bind its popular chord "C-x g" to magit-status pop-up!
 (use-package magit
