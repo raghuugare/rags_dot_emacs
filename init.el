@@ -65,6 +65,7 @@ static char *note[] = {
 \"######....\",
 \"#######..#\" };")))
  '(fci-rule-color "#222222")
+ '(global-company-mode t)
  '(gnus-logo-colors (quote ("#2fdbde" "#c0c0c0")))
  '(gnus-mode-line-image-cache
 	 (quote
