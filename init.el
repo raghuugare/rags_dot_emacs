@@ -29,7 +29,11 @@
  '(magit-branch-current ((t (:inherit magit-branch-local :box 1 :weight bold))))
  '(mode-line ((t (:background "wheat2" :foreground "#272b34" :box (:line-width 2 :color "grey75" :style released-button)))))
  '(mode-line-inactive ((t (:inherit mode-line :background "#dedbd7" :foreground "#495259" :box (:line-width 2 :color "grey75" :style released-button)))))
- '(org-level-1 ((t (:foreground "#cd00cd" :weight bold :height 1.2)))))
+ '(org-level-1 ((t (:foreground "#cd00cd" :weight bold :height 1.2))))
+ '(org-level-2 ((t (:foreground "coral3" :weight bold :height 1.1))))
+ '(org-level-3 ((t (:foreground "purple3" :weight bold))))
+ '(org-level-4 ((t (:foreground "dark magenta" :weight bold))))
+ '(org-special-keyword ((t (:foreground "red1" :weight bold)))))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
