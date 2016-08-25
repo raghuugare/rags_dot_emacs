@@ -91,7 +91,6 @@ static char *gnus-pointer[] = {
 \"###########.######\" };")))
  '(indent-tab-mode nil t)
  '(menu-bar-mode nil)
- '(global-company-mode t)
  '(package-selected-packages
 	 (quote
 		(farmhouse-theme rainbow-identifiers rainbow-mode abyss-theme alect-themes restclient paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
