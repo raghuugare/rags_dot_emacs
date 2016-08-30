@@ -98,8 +98,12 @@ static char *gnus-pointer[] = {
  '(menu-bar-mode nil)
  '(package-selected-packages
 	 (quote
-		(farmhouse-theme rainbow-identifiers rainbow-mode abyss-theme alect-themes restclient paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
+		(graphviz-dot-mode farmhouse-theme rainbow-identifiers rainbow-mode abyss-theme alect-themes restclient paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
  '(pdf-tools-handle-upgrades nil)
+ '(safe-local-variable-values
+	 (quote
+		((haskell-process-use-ghci . t)
+		 (haskell-indent-spaces . 2))))
  '(show-paren-mode t)
  '(tab-width 2)
  '(tool-bar-mode nil)
@@ -241,6 +245,10 @@ static char *gnus-pointer[] = {
 (use-package rainbow-mode
 	:ensure t)
 
+;; handle .dot files! :)
+(use-package graphviz-dot-mode
+	:ensure t)
+ 
 ;; get rainbow-identifiers
 (use-package rainbow-identifiers
 	:ensure t)
