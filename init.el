@@ -98,13 +98,15 @@ static char *gnus-pointer[] = {
  '(menu-bar-mode nil)
  '(package-selected-packages
 	 (quote
-		(graphviz-dot-mode farmhouse-theme rainbow-identifiers rainbow-mode abyss-theme alect-themes restclient paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
+		(sunshine graphviz-dot-mode farmhouse-theme rainbow-identifiers rainbow-mode abyss-theme alect-themes restclient paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
  '(pdf-tools-handle-upgrades nil)
  '(safe-local-variable-values
 	 (quote
 		((haskell-process-use-ghci . t)
 		 (haskell-indent-spaces . 2))))
  '(show-paren-mode t)
+ '(sunshine-location "Bengaluru, India")
+ '(sunshine-units (quote metric))
  '(tab-width 2)
  '(tool-bar-mode nil)
  '(vc-annotate-background "#222222")
@@ -442,6 +444,13 @@ static char *gnus-pointer[] = {
   :init
   (setq wttrin-default-cities '("Bengaluru"
                                 "London")))
+
+;; weather info from Aaron Bieber's sunshine package! :)
+(use-package sunshine
+	:ensure t
+	:init
+	(setq sunshine-show-icons t))
+
 
 ;; ===========================================================
 ;; -----------------------BOOKS-------------------------------
