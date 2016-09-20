@@ -420,6 +420,9 @@ static char *gnus-pointer[] = {
 (use-package farmhouse-theme
 	:ensure t)
 
+(use-package material-theme
+	:ensure t)
+
 ;; Load the current-favourite default theme at start-up! :)
 ;; (load-theme #'abyss t)
 ;; (load-theme #'sanityinc-solarized-light t)
