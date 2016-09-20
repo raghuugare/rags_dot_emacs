@@ -157,6 +157,11 @@ static char *gnus-pointer[] = {
 (require 'diminish)
 (require 'bind-key)
 
+;; Use "better" defaults thanks to @technomancy
+;; source: https://github.com/technomancy/better-defaults
+(use-package better-defaults
+	:ensure t)
+
 ;;;; LOAD Rainbow mode also when opening files of type *.css
 ;; css-mode (MAJOR) plus rainbow-mode(MINOR) 
 (defun css-mode-and-rainbow-mode() (css-mode) (rainbow-mode))
@@ -372,7 +377,7 @@ static char *gnus-pointer[] = {
 	:pin melpa-stable)
 
 ;; get a mode to help out with the Shakespearean templates(Hamlet, Lucius, Cassius, Julius)
-;; source: http://github.com/CodyReichert/shakespeare-mode
+;; source: http://github.com/CodyReichert/shakespeare-modeb
 (use-package shakespeare-mode
 	:ensure t
 	:pin melpa-stable)
