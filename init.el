@@ -23,12 +23,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 140 :foundry "nil" :family "Input Mono Narrow"))))
+ '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 140 :width normal :foundry "nil" :family "Input Mono Condensed"))))
  '(cursor ((t (:background "magenta4"))))
  '(link-visited ((t (:foreground "dark magenta" :underline t :weight normal))))
  '(magit-branch-current ((t (:inherit magit-branch-local :box 1 :weight bold))))
- '(mode-line ((t (:background "wheat2" :foreground "#272b34" :box (:line-width 2 :color "grey75" :style released-button)))))
- '(mode-line-inactive ((t (:inherit mode-line :background "#dedbd7" :foreground "#495259" :box (:line-width 2 :color "grey75" :style released-button)))))
+ '(mode-line ((((class color) (min-colors 89)) (:foreground "#ffffff" :background "#1c1f26"))))
+ '(mode-line-inactive ((((class color) (min-colors 89)) (:inherit mode-line :foreground "#a7adba" :background "#1c1f26" :weight normal :box nil))))
  '(org-level-1 ((t (:foreground "#cd00cd" :weight bold :height 1.2))))
  '(org-level-2 ((t (:foreground "coral3" :weight bold :height 1.1))))
  '(org-level-3 ((t (:foreground "purple3" :weight bold))))
@@ -41,15 +41,15 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
-	 ["#3f3f3f" "#ea3838" "#7fb07f" "#fe8b04" "#62b6ea" "#e353b9" "#1fb3b3" "#d5d2be"])
+   ["#3f3f3f" "#ea3838" "#7fb07f" "#fe8b04" "#62b6ea" "#e353b9" "#1fb3b3" "#d5d2be"])
  '(column-number-mode t)
  '(custom-safe-themes
-	 (quote
-		("cdd26fa6a8c6706c9009db659d2dffd7f4b0350f9cc94e5df657fa295fffec71" "e8825f26af32403c5ad8bc983f8610a4a4786eb55e3a363fa9acb48e0677fe7e" "4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "ab04c00a7e48ad784b52f34aa6bfa1e80d0c3fcacc50e1189af3651013eb0d58" "a0feb1322de9e26a4d209d1cfa236deaf64662bb604fa513cca6a057ddf0ef64" "7bd626fcc9fbfb44186cf3f08b8055d5a15e748d5338e47f9391d459586e20db" "392f19e7788de27faf128a6f56325123c47205f477da227baf6a6a918f73b5dc" "9dc64d345811d74b5cd0dac92e5717e1016573417b23811b2c37bb985da41da2" "9a3c51c59edfefd53e5de64c9da248c24b628d4e78cc808611abd15b3e58858f" "1a094b79734450a146b0c43afb6c669045d7a8a5c28bc0210aba28d36f85d86f" "4c8372c68b3eab14516b6ab8233de2f9e0ecac01aaa859e547f902d27310c0c3" "39a854967792547c704cbff8ad4f97429f77dfcf7b3b4d2a62679ecd34b608da" "7356632cebc6a11a87bc5fcffaa49bae528026a78637acd03cae57c091afd9b9" "5e3fc08bcadce4c6785fc49be686a4a82a356db569f55d411258984e952f194a" "7153b82e50b6f7452b4519097f880d968a6eaf6f6ef38cc45a144958e553fbc6" default)))
+   (quote
+    ("5dc0ae2d193460de979a463b907b4b2c6d2c9c4657b2e9e66b8898d2592e3de5" "cdd26fa6a8c6706c9009db659d2dffd7f4b0350f9cc94e5df657fa295fffec71" "e8825f26af32403c5ad8bc983f8610a4a4786eb55e3a363fa9acb48e0677fe7e" "4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "ab04c00a7e48ad784b52f34aa6bfa1e80d0c3fcacc50e1189af3651013eb0d58" "a0feb1322de9e26a4d209d1cfa236deaf64662bb604fa513cca6a057ddf0ef64" "7bd626fcc9fbfb44186cf3f08b8055d5a15e748d5338e47f9391d459586e20db" "392f19e7788de27faf128a6f56325123c47205f477da227baf6a6a918f73b5dc" "9dc64d345811d74b5cd0dac92e5717e1016573417b23811b2c37bb985da41da2" "9a3c51c59edfefd53e5de64c9da248c24b628d4e78cc808611abd15b3e58858f" "1a094b79734450a146b0c43afb6c669045d7a8a5c28bc0210aba28d36f85d86f" "4c8372c68b3eab14516b6ab8233de2f9e0ecac01aaa859e547f902d27310c0c3" "39a854967792547c704cbff8ad4f97429f77dfcf7b3b4d2a62679ecd34b608da" "7356632cebc6a11a87bc5fcffaa49bae528026a78637acd03cae57c091afd9b9" "5e3fc08bcadce4c6785fc49be686a4a82a356db569f55d411258984e952f194a" "7153b82e50b6f7452b4519097f880d968a6eaf6f6ef38cc45a144958e553fbc6" default)))
  '(diary-entry-marker (quote font-lock-variable-name-face))
  '(emms-mode-line-icon-image-cache
-	 (quote
-		(image :type xpm :ascent center :data "/* XPM */
+   (quote
+    (image :type xpm :ascent center :data "/* XPM */
 static char *note[] = {
 /* width height num_colors chars_per_pixel */
 \"    10   11        2            1\",
@@ -72,8 +72,8 @@ static char *note[] = {
  '(global-company-mode t)
  '(gnus-logo-colors (quote ("#2fdbde" "#c0c0c0")))
  '(gnus-mode-line-image-cache
-	 (quote
-		(image :type xpm :ascent center :data "/* XPM */
+   (quote
+    (image :type xpm :ascent center :data "/* XPM */
 static char *gnus-pointer[] = {
 /* width height num_colors chars_per_pixel */
 \"    18    13        2            1\",
@@ -97,13 +97,13 @@ static char *gnus-pointer[] = {
  '(indent-tab-mode nil t)
  '(menu-bar-mode nil)
  '(package-selected-packages
-	 (quote
-		(sunshine graphviz-dot-mode farmhouse-theme rainbow-identifiers rainbow-mode abyss-theme alect-themes restclient paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
+   (quote
+    (sunshine graphviz-dot-mode farmhouse-theme rainbow-identifiers rainbow-mode abyss-theme alect-themes restclient paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
  '(pdf-tools-handle-upgrades nil)
  '(safe-local-variable-values
-	 (quote
-		((haskell-process-use-ghci . t)
-		 (haskell-indent-spaces . 2))))
+   (quote
+    ((haskell-process-use-ghci . t)
+     (haskell-indent-spaces . 2))))
  '(show-paren-mode t)
  '(sunshine-location "Bengaluru, India")
  '(sunshine-units (quote metric))
@@ -111,26 +111,34 @@ static char *gnus-pointer[] = {
  '(tool-bar-mode nil)
  '(vc-annotate-background "#222222")
  '(vc-annotate-color-map
-	 (quote
-		((20 . "#db4334")
-		 (40 . "#ea3838")
-		 (60 . "#abab3a")
-		 (80 . "#e5c900")
-		 (100 . "#fe8b04")
-		 (120 . "#e8e815")
-		 (140 . "#3cb370")
-		 (160 . "#099709")
-		 (180 . "#7fb07f")
-		 (200 . "#32cd32")
-		 (220 . "#8ce096")
-		 (240 . "#528d8d")
-		 (260 . "#1fb3b3")
-		 (280 . "#0c8782")
-		 (300 . "#00aff5")
-		 (320 . "#62b6ea")
-		 (340 . "#94bff3")
-		 (360 . "#e353b9"))))
- '(vc-annotate-very-old-color "#e353b9"))
+   (quote
+    ((20 . "#db4334")
+     (40 . "#ea3838")
+     (60 . "#abab3a")
+     (80 . "#e5c900")
+     (100 . "#fe8b04")
+     (120 . "#e8e815")
+     (140 . "#3cb370")
+     (160 . "#099709")
+     (180 . "#7fb07f")
+     (200 . "#32cd32")
+     (220 . "#8ce096")
+     (240 . "#528d8d")
+     (260 . "#1fb3b3")
+     (280 . "#0c8782")
+     (300 . "#00aff5")
+     (320 . "#62b6ea")
+     (340 . "#94bff3")
+     (360 . "#e353b9"))))
+ '(vc-annotate-very-old-color "#e353b9")
+ '(when
+      (or
+       (not
+        (boundp
+         (quote ansi-term-color-vector)))
+       (not
+        (facep
+         (aref ansi-term-color-vector 0))))))
 
 ;; NOTE: Regarding Tabs vs Space issue
 ;; See the following art-icles!
@@ -427,7 +435,7 @@ static char *gnus-pointer[] = {
 ;; (load-theme #'abyss t)
 ;; (load-theme #'sanityinc-solarized-light t)
 ;; (load-theme #'sanityinc-solarized-dark t)
-(load-theme #'farmhouse-light)
+(load-theme #'material-light)
 
 ;; ===========================================================
 ;; -----------------------GAMES-------------------------------
