@@ -7,7 +7,7 @@ My settings and learnings (`.emacs.d`) pertaining to the awesome [**GNU Emacs**]
 If you are a complete beginner to Emacs, I would suggest you go through some of the following excellent resources:
 
 + Xah Lee's [ErgoEmacs blog](http://ergoemacs.org/emacs/blog.html)
-+ Mickey Petersen's "[Mastering Emacs](https://www.masteringemacs.org)" book & site which has [a section for Emacs beginners](https://www.masteringemacs.org/article/beginners-guide-to-emacs)
++ Mickey Petersen's awesome "[Mastering Emacs](https://www.masteringemacs.org)" book & site which has [a section for Emacs beginners](https://www.masteringemacs.org/article/beginners-guide-to-emacs)
 + [Sacha Chua's Emacs Beginner Resources](http://sachachua.com/blog/2014/04/emacs-beginner-resources/) which records many other interesting links 
 
 ---
