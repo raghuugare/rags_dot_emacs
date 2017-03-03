@@ -23,6 +23,7 @@ Emacs Starter Kit |  Author
 ## Installation
 
 This is more of a learning experiment for myself. So, please feel free to make your own customizations as you may deem fit.
+And as for Emacs, there is no dearth of customization options!
 
 Intended to be used in-lieu of a raw `.emacs.d` folder.
 
