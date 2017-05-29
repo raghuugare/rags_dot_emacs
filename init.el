@@ -23,7 +23,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 140 :width normal :foundry "nil" :family "Inconsolata for Powerline"))))
+ '(default ((t (:inherit nil :stipple nil :background "#002b36" :foreground "#839496" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 160 :width normal :foundry "nil" :family "Inconsolata for Powerline"))))
  '(cursor ((t (:background "magenta4"))))
  '(link-visited ((t (:foreground "dark magenta" :underline t :weight normal))))
  '(magit-branch-current ((t (:inherit magit-branch-local :box 1 :weight bold))))
@@ -70,7 +70,7 @@ static char *note[] = {
 \"#######..#\" };")))
  '(fci-rule-color "#222222")
  '(global-company-mode t)
- '(gnus-logo-colors (quote ("#2fdbde" "#c0c0c0")))
+ '(gnus-logo-colors (quote ("#2fdbde" "#c0c0c0")) t)
  '(gnus-mode-line-image-cache
    (quote
     (image :type xpm :ascent center :data "/* XPM */
@@ -93,12 +93,12 @@ static char *gnus-pointer[] = {
 \"######..###.######\",
 \"###....####.######\",
 \"###..######.######\",
-\"###########.######\" };")))
+\"###########.######\" };")) t)
  '(indent-tab-mode nil t)
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (sunshine graphviz-dot-mode farmhouse-theme rainbow-identifiers rainbow-mode abyss-theme alect-themes restclient paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
+    (elpy sunshine graphviz-dot-mode farmhouse-theme rainbow-identifiers rainbow-mode abyss-theme alect-themes restclient paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
  '(pdf-tools-handle-upgrades nil)
  '(safe-local-variable-values
    (quote
@@ -286,6 +286,11 @@ static char *gnus-pointer[] = {
   :ensure t
   :pin melpa-stable)
 
+;; elpy for Python IDE capabilities! :-)
+(use-package elpy
+  :ensure t
+  :pin melpa-stable)
+
 ;; quick help in a nice manner!
 (use-package company-quickhelp
 	:ensure t)
@@ -439,8 +444,8 @@ static char *gnus-pointer[] = {
 ;; Load the current-favourite default theme at start-up! :)
 ;; (load-theme #'abyss t)
 ;; (load-theme #'sanityinc-solarized-light t)
-;; (load-theme #'sanityinc-solarized-dark t)
-(load-theme #'material-light)
+(load-theme #'sanityinc-solarized-dark t)
+;; (load-theme #'material-light)
 
 ;; ===========================================================
 ;; -----------------------GAMES-------------------------------
