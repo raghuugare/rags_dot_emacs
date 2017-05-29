@@ -281,6 +281,11 @@ static char *gnus-pointer[] = {
 (use-package company-web
 	:ensure t)
 
+;; jinja2-mode for jinja2 templates (Flask, etc.)
+(use-package jinja2-mode
+  :ensure t
+  :pin melpa-stable)
+
 ;; quick help in a nice manner!
 (use-package company-quickhelp
 	:ensure t)
