@@ -30,7 +30,7 @@ Intended to be used in-lieu of a raw `.emacs.d` folder.
 That is, simply run the following and fire up Emacs(version 24.5.1 as tested):
 
 ```
-git clone git@github.com:raghuugare/rags_dot_emacs.git ~/.emacs.d
+git clone https://github.com/raghuugare/rags_dot_emacs.git ~/.emacs.d
 ```
 
 **Caveats & Warnings**
