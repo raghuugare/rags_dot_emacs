@@ -1,6 +1,6 @@
 
 
-# rags_dot_emacs
+# My baby emacs config...
 
 My settings and learnings (`.emacs.d`) pertaining to the awesome [**GNU Emacs**](https://www.gnu.org/software/emacs/)! &lt;3 :)
 
