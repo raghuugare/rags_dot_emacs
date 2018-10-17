@@ -1,5 +1,3 @@
-
-
 # My baby emacs config...
 
 My settings and learnings (`.emacs.d`) pertaining to the awesome [**GNU Emacs**](https://www.gnu.org/software/emacs/)! &lt;3 :)
@@ -8,7 +6,7 @@ If you are a complete beginner to Emacs, I would suggest you go through some of 
 
 + Xah Lee's [ErgoEmacs blog](http://ergoemacs.org/emacs/blog.html)
 + Mickey Petersen's awesome "[Mastering Emacs](https://www.masteringemacs.org)" book & eponymous site which has [a section for Emacs beginners](https://www.masteringemacs.org/article/beginners-guide-to-emacs)
-+ [Sacha Chua's Emacs Beginner Resources](http://sachachua.com/blog/2014/04/emacs-beginner-resources/) which records many other interesting links 
++ Sacha Chua's [Emacs Beginner Resources](http://sachachua.com/blog/2014/04/emacs-beginner-resources/) which records many other interesting links 
 
 ---
 
