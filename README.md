@@ -7,6 +7,7 @@ If you are a complete beginner to Emacs, I would suggest you go through some of 
 + Xah Lee's [ErgoEmacs blog](http://ergoemacs.org/emacs/blog.html)
 + Mickey Petersen's awesome "[Mastering Emacs](https://www.masteringemacs.org)" book & eponymous site which has [a section for Emacs beginners](https://www.masteringemacs.org/article/beginners-guide-to-emacs)
 + Sacha Chua's [Emacs Beginner Resources](http://sachachua.com/blog/2014/04/emacs-beginner-resources/) which records many other interesting links 
++ The book **"An Introduction to Programming in Emacs Lisp"** by _Robert Chassell_ for a novice-friendly introduction to help learn Emacs Lisp.
 
 ---
 
