@@ -23,12 +23,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "#002b36" :foreground "#839496" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 160 :width normal :foundry "nil" :family "Inconsolata for Powerline"))))
+ '(default ((((class color) (min-colors 89)) (:foreground "#ffffff" :background "#262626"))))
  '(cursor ((t (:background "magenta4"))))
  '(link-visited ((t (:foreground "dark magenta" :underline t :weight normal))))
  '(magit-branch-current ((t (:inherit magit-branch-local :box 1 :weight bold))))
- '(mode-line ((((class color) (min-colors 89)) (:foreground "#ffffff" :background "#1c1f26"))))
- '(mode-line-inactive ((((class color) (min-colors 89)) (:inherit mode-line :foreground "#a7adba" :background "#1c1f26" :weight normal :box nil))))
+ '(mode-line ((((class color) (min-colors 89)) (:foreground "#ffffff" :background "#121212"))))
+ '(mode-line-inactive ((((class color) (min-colors 89)) (:inherit mode-line :foreground "#a7adba" :background "#121212" :weight normal :box nil))))
  '(org-level-1 ((t (:foreground "#cd00cd" :weight bold :height 1.2))))
  '(org-level-2 ((t (:foreground "coral3" :weight bold :height 1.1))))
  '(org-level-3 ((t (:foreground "purple3" :weight bold))))
@@ -98,7 +98,7 @@ static char *gnus-pointer[] = {
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (elpy sunshine graphviz-dot-mode farmhouse-theme rainbow-identifiers rainbow-mode abyss-theme alect-themes restclient paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
+    (elpy sunshine graphviz-dot-mode rainbow-identifiers rainbow-mode abyss-theme alect-themes restclient paredit sass-mode wttrin jumblr yaml-mode json-mode web-mode use-package smex smartparens slime-volleyball slime sicp shakespeare-mode s pdf-tools markdown-mode magit lorem-ipsum git-gutter exec-path-from-shell color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized color-theme-modern chess)))
  '(pdf-tools-handle-upgrades nil)
  '(safe-local-variable-values
    (quote
@@ -435,8 +435,8 @@ static char *gnus-pointer[] = {
 (use-package abyss-theme
 	:ensure t)
 
-(use-package farmhouse-theme
-	:ensure t)
+;;(use-package farmhouse-theme
+	;;:ensure t)
 
 (use-package material-theme
 	:ensure t)
