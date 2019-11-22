@@ -162,7 +162,7 @@ static char *gnus-pointer[] = {
 (eval-when-compile
   (require 'use-package))
 
-(require 'diminish)
+;; (require 'diminish)
 (require 'bind-key)
 
 ;; Use "better" defaults thanks to @technomancy
