@@ -15,7 +15,7 @@ Also, some of the Emacs Starter Kits that you can take a look at for information
 
 Emacs Starter Kit |  Author
 :-----------------|:--------
-[**Prelude**](http://batsov.com/prelude/) | Bozhidor Batsov, known for [CIDER](https://cider.readthedocs.io/en/latest/) (Clojure IDE that Rocks)
+[**Prelude**](https://prelude.emacsredux.com/en/latest/) | Bozhidor Batsov, known for [CIDER](https://cider.readthedocs.io/en/latest/) (Clojure IDE that Rocks)
 [**Steve Purcell's Emacs config**](http://github.com/purcell/emacs.d) | Steve Purcell (an avid open-source maintainer, including for [MELPA](https://melpa.org/#/))
 [**John Wiegley's Emacs config**](https://github.com/jwiegley/dot-emacs) | John Wiegley (known for use-package, ledger, & lots more)
 
